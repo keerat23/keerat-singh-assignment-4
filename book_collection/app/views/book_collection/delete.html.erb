@@ -1,0 +1,6 @@
+<h1>Warning</h1>
+
+<h1>Are you sure you want to delete <%=" #{@title}"%>?</h1>
+<button><%= link_to("No", "/book_collection/home?message=Deletion+Cancelled")%></button> 
+<button><%= link_to("Yes", "/book_collection/delete?id=#{@id}&decision=yes")%></button>
+
